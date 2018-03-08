@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Constellation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #e2231b;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://rcos-constellation.me">Constellation</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        #<li><a href="https://rcos-constellation.me/welcome.php">My Profile</a></li>
+        <li><a href="https://faculty.rpi.edu/departments">Professors</a></li>
+        <li><a href="https://info.rpi.edu/undergraduate-research">Research</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://rcos-constellation.me/register.php"<span class="glyphicon glyphicon-log-in"></span> Register/Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Find Out More</a></p>
+      <p><a href="http://www.rpi.edu/dept/cct/apps/undergrad/resources/PDFs/Fall2015URPsForWebsite.pdf">Past Projects</a></p>
+      <p><a href="#">About Constellation</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Constellation </h1>
+      <p> Creators:
+	Ian Steenstra,
+	Brain Choi,
+	Edwin Wallis, and
+	Mario Formisano
+	</p>
+      <p> <br> </br>Connect with professors and search for research projects that are the best match for your skills and study.</p>
+      <p>This project seeks to create a website that allows easy communication between students and professors who seek to conduct research together. The website will encompass personnel profiles, research feeds, application templates, and other features similar to LinkedIn.</p>
+      <hr>
+      <h3>Projects and Research 2018</h3>
+        <form class="form-inline">
+          <input type="email" class="form-control" size="55" placeholder="Major, Interest, Skill, Keyword...">
+          <button type="button" class="btn btn-danger">Search Projects</button>
+        </form>
+      <hr>
+      <a class="twitter-timeline" data-width="600" data-height="410" href="https://twitter.com/rpi?ref_src=twsrc%5Etfw">Tweets by rpi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+</div>
+</div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>RCOS Constellation 2018</p>
+</footer>
+
+</body>
+</html>
