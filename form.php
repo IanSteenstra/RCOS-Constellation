@@ -34,11 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	  } 
 	$minExp = test_input($_POST["minExp"]);
 	if (empty($_POST["keywords"])) {
-	    $keywordsErr = "Minimum GPA is required";
+	    $keywordsErr = "At least one keyword required";
 	  } 
 	$keywords = test_input($_POST["keywords"]);
 	if (empty($_POST["classes"])) {
-	    $classesErr = "Minimum GPA is required";
+	    $classesErr = "At least one class is required";
 	  } 
 	$classes = test_input($_POST["classes"]);
 }
@@ -60,19 +60,19 @@ function test_input($data) {
   <span class="error">* <?php echo $minGPAErr;?></span>
   <br><br>
   Minimum Class Year: <input type="text" name="minYear" value="<?php echo $minYear;?>">
-  <span class="error">*<?php echo $minYearErr;?></span>
+  <span class="error">* <?php echo $minYearErr;?></span>
   <br><br>
   Maximum Class Year: <input type="text" name="maxYear" value="<?php echo $maxYear;?>">
-  <span class="error"><?php echo $maxYearErr;?></span>
+  <span class="error">* <?php echo $maxYearErr;?></span>
   <br><br>
   Minimum Experience: <input type="text" name="minExp" value="<?php echo $minExp;?>">
-  <span class="error">*<?php echo $minExpErr;?></span>
+  <span class="error">* <?php echo $minExpErr;?></span>
   <br><br>
   Keywords: <input type="text" name="keywords" value="<?php echo $keywords;?>">
-  <span class="error"><?php echo $keywordsErr;?></span>
+  <span class="error">* <?php echo $keywordsErr;?></span>
   <br><br>
   Classes: <input type="text" name="classes" value="<?php echo $classes;?>">
-  <span class="error"><?php echo $classesErr;?></span>
+  <span class="error">* <?php echo $classesErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
